@@ -25,6 +25,12 @@ Make sure you have the following installed:
 - [Git](https://git-scm.com/)
 
 ### Setup Instructions
+
+#### Install Required NPM Packages
+Run the following command to install necessary dependencies:
+```sh
+npm install express pg dotenv cors body-parser
+```
 1. **Clone the Repository:**
    ```sh
    [git clone https://github.com/your-username/todo-list.git](https://github.com/Harshitjoc/TodoList.git)
@@ -38,7 +44,7 @@ Make sure you have the following installed:
    - Create a PostgreSQL database
    - Run the SQL script (`db/init.sql`) to create tables
    ```sh
-   psql -U your_user -d your_database -f database/schema.sql
+   psql -U your_user -d your_database -f db/init.sql
    ```
 4. **Configure Environment Variables:**
    - Copy `.env.example` to `.env`
